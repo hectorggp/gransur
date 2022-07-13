@@ -6,7 +6,7 @@ workflows:
           set -e # exit on first failed command
 
           xcode-project run-tests \
-              --workspace project.xcworkspace \
+              --workspace ToDo.xcworkspace \
               --scheme ToDo \
               --device "iPhone 12"
         test_report: build/ios/test/*.xml
